@@ -3,10 +3,10 @@
     android:shape="ring"
     android:thicknessRatio="2"
     android:useLevel="false">
-    <solid android:color="#0000ff" />
+    <solid android:color="#a3c472" />
 
     <stroke
         android:width="2dp"
-        android:color="#0000ff" />
+        android:color="#a4c473" />
 
 </shape>

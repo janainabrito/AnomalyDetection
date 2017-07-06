@@ -8,44 +8,44 @@
     android:paddingTop="16dp"
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
-    android:background="#747474"
+    android:background="#f4fcfb"
     tools:context="com.example.janana.anomalydetection.display">
 
+    <RelativeLayout
+    android:layout_width="0dp"
+    android:layout_height="400dp"
+    android:gravity="center"
+    android:orientation="horizontal">
 
-    <TextView
+    <Button
         android:id="@+id/ssort"
         android:layout_width="wrap_content"
         android:layout_height="50dp"
         android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:layout_marginTop="10dp"
         android:paddingRight="10dp"
         android:text="Insertion Sort"
         android:textSize="18sp"
-        android:gravity="center"
         android:textColor="#ffffff"
-        android:background="#448844"
-        android:layout_alignParentBottom = "true"
-        android:layout_centerHorizontal ="true"
-        tools:layout_editor_absoluteY="213dp"
-        tools:layout_editor_absoluteX="114dp" />
-
+        android:background="#1ac1d4"
+        android:layout_below="@+id/txtnum5"
+        android:layout_centerHorizontal ="true" />
 
     <SeekBar android:id="@+id/seekBarDisplay"
         android:layout_width="368dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft = "true"
-        android:layout_alignParentTop ="true"
-        android:max="10"
-        tools:layout_editor_absoluteY="375dp"
-        tools:layout_editor_absoluteX="-9dp" />
+        android:layout_marginTop="100dp"
+        android:layout_below="@+id/ssort"
+        android:max="10"/>
+
+    </RelativeLayout>
 
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="50dp"
-        android:layout_centerInParent='true'
         android:gravity="center"
-        android:orientation="horizontal"
-        tools:layout_editor_absoluteX="33dp"
-        tools:layout_editor_absoluteY="66dp">
+        android:orientation="horizontal">
 
         <TextView
             android:id="@+id/txtnum1"
@@ -54,6 +54,7 @@
             android:background="@drawable/circle_shape_blue"
             android:gravity="center"
             android:text="1"
+            android:layout_marginLeft="35dp"
             android:textColor="#ffffff"
             android:textSize="18sp" />
 
