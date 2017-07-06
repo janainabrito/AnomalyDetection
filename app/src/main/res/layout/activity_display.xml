@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingTop="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:background="#747474"
+    tools:context="com.example.janana.anomalydetection.display">
+
+
+    <TextView
+        android:id="@+id/ssort"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="Insertion Sort"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:background="#448844"
+        android:layout_alignParentBottom = "true"
+        android:layout_centerHorizontal ="true"
+        tools:layout_editor_absoluteY="213dp"
+        tools:layout_editor_absoluteX="114dp" />
+
+
+    <SeekBar android:id="@+id/seekBarDisplay"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft = "true"
+        android:layout_alignParentTop ="true"
+        android:max="10"
+        tools:layout_editor_absoluteY="375dp"
+        tools:layout_editor_absoluteX="-9dp" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent='true'
+        android:gravity="center"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="33dp"
+        tools:layout_editor_absoluteY="66dp">
+
+        <TextView
+            android:id="@+id/txtnum1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/circle_shape_blue"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/txtnum2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/circle_shape_blue"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/txtnum3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/circle_shape_blue"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/txtnum4"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/circle_shape_blue"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/txtnum5"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/circle_shape_blue"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -19,92 +19,21 @@
         android:onClick="mostrarPadrao"
         android:textSize="35dp"
         android:clickable="true"
+        android:contextClickable="true"
+        android:layout_marginTop="111dp"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:contextClickable="true" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Display Bound"
-        android:id="@+id/btnDisplay"
-        android:textSize="35dp"
-        android:textColor="@color/colorPrimaryDark"
-        android:clickable="true"
-        android:onClick="alteraDisplay"
-        android:layout_below="@+id/btnCPU"
         android:layout_centerHorizontal="true" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="CPU Bound"
-        android:id="@+id/btnCPU"
+        android:text="Insertion sort"
+        android:id="@+id/btnDisplay"
         android:textSize="35dp"
-        android:shadowColor="@color/colorAccent"
+        android:textColor="@color/colorPrimaryDark"
+        android:clickable="true"
+        android:layout_marginTop="66dp"
         android:layout_below="@+id/btnPadrao"
-        android:layout_centerHorizontal="true"
-        android:onClick="alteraCPU"
-        android:textColor="@color/colorAccent"
-        android:clickable="true" />
+        android:layout_centerHorizontal="true" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="GPU Bound"
-        android:id="@+id/btnGPU"
-        android:textSize="35dp"
-        android:layout_below="@+id/btnDisplay"
-        android:layout_centerHorizontal="true"
-        android:textColor="@android:color/holo_orange_dark"
-        android:clickable="true"
-        android:onClick="alteraGPU" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="GPS BOUND"
-        android:id="@+id/btnGPS"
-        android:textSize="35dp"
-        android:layout_below="@+id/btnGPU"
-        android:layout_alignStart="@+id/btnGPU"
-        android:textColor="@android:color/holo_green_dark"
-        android:clickable="true"
-        android:onClick="alteraGPS" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Memory Bound"
-        android:id="@+id/btnMemory"
-        android:textSize="35dp"
-        android:layout_below="@+id/btnGPS"
-        android:layout_alignStart="@+id/btnDisplay"
-        android:textColor="@color/accent_material_light"
-        android:clickable="true"
-        android:onClick="alteraMemoryUsage" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Wifi Bound"
-        android:id="@+id/btnWifi"
-        android:textSize="35dp"
-        android:layout_below="@+id/btnMemory"
-        android:layout_alignStart="@+id/btnGPS"
-        android:textColor="@android:color/holo_red_dark"
-        android:clickable="true"
-        android:onClick="alteraWifi" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="3G Bound"
-        android:id="@+id/btn3G"
-        android:textSize="35dp"
-        android:textColor="@android:color/holo_purple"
-        android:clickable="true"
-        android:onClick="altera3G"
-        android:layout_below="@+id/btnWifi"
-        android:layout_alignStart="@+id/btnPadrao" />
 </RelativeLayout>
