@@ -16,16 +16,19 @@ public class display extends AppCompatActivity {
     Context context;
     int SBrightness;
     private TextView[] txtnum;
-    private int []numbers = {9,3,7,2,1};
     private Handler handler = new Handler();
     int loop=0,n;
+    int qtd = 1000; //qtd entradas
+    private int []numbers = {9,3,7,2,1};
+    private int []array =  new int[qtd];
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_display);
 
-        txtnum = new TextView[5];
+        txtnum = new TextView[numbers.length];
         txtnum[0] = (TextView) findViewById(R.id.txtnum1);
         txtnum[1] = (TextView) findViewById(R.id.txtnum2);
         txtnum[2] = (TextView) findViewById(R.id.txtnum3);
@@ -40,6 +43,8 @@ public class display extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 insertionsort();
+                array = generateArray();
+                insertionSort(array);
             }
         });
 
@@ -98,6 +103,27 @@ public class display extends AppCompatActivity {
         n = findInsertMin(m);
         Log.e("n ",""+n);
         txtnum[n].setBackgroundResource(R.drawable.circle_shape_blue);
+    }
+
+    public void insertionSort(int[] array) {
+        int n = array.length;
+        for (int j = 1; j < n; j++) {
+            int key = array[j];
+            int i = j - 1;
+            while ((i > -1) && (array[i] > key)) {
+                array[i + 1] = array[i];
+                i--;
+            }
+            array[i + 1] = key;
+        }
+    }
+
+    public int[] generateArray() {
+        array = new int[qtd];
+        for (int i = 0; i < qtd; i++) {
+            array[i] =  (int)(Math.random() * qtd);
+        }
+        return array;
     }
 
     int findInsertMin(int v){
