@@ -18,7 +18,7 @@ public class display extends AppCompatActivity {
     private TextView[] txtnum;
     private Handler handler = new Handler();
     int loop=0,n;
-    int qtd = 1000; //qtd entradas
+    int qtd = 1000000; //qtd entradas
     private int []numbers = {9,3,7,2,1};
     private int []array =  new int[qtd];
 
